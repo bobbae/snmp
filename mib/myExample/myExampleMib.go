@@ -10,7 +10,7 @@ func init() {
 	g_Logger = GoSNMPServer.NewDiscardLogger()
 	g_MyVal12345 = 12345
 }
-cd
+
 var g_Logger GoSNMPServer.ILogger
 
 //SetupLogger Setups Logger for this mib

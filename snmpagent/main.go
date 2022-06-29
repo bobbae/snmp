@@ -9,7 +9,6 @@ import "github.com/slayercat/GoSNMPServer/mibImps"
 import "snmp/mib"
 import "github.com/urfave/cli/v2"
 
-
 func makeApp() *cli.App {
 	return &cli.App{
 		Name:        "gosnmpserver",
@@ -21,7 +20,7 @@ func makeApp() *cli.App {
 				Flags: []cli.Flag{
 					&cli.StringFlag{Name: "logLevel", Value: "info"},
 					&cli.StringFlag{Name: "community", Value: "public"},
-					&cli.StringFlag{Name: "bindTo", Value: "127.0.0.1:1161"},
+					&cli.StringFlag{Name: "bindTo", Value: "127.0.0.1:161"},
 					&cli.StringFlag{Name: "v3Username", Value: "testuser"},
 					&cli.StringFlag{Name: "v3AuthenticationPassphrase", Value: "testauth"},
 					&cli.StringFlag{Name: "v3PrivacyPassphrase", Value: "testpriv"},
